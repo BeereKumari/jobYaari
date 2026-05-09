@@ -1,8 +1,8 @@
 <?php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'jobyaari_blog');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_HOST', 'sql113.infinityfree.com');
+define('DB_NAME', 'f0_41870764_jobyaari_blogs');
+define('DB_USER', 'if0_41870764');
+define('DB_PASS', 'sIFjdop1Lqy');
 
 try {
     $pdo = new PDO(

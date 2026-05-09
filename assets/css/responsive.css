@@ -1,0 +1,287 @@
+/* ========================================
+   JobYaari Responsive Stylesheet
+   ======================================== */
+
+/* --- Tablet: 481px - 1024px --- */
+@media (max-width: 1024px) {
+    .blog-layout {
+        grid-template-columns: 60% 40%;
+        gap: 24px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .admin-sidebar {
+        width: 60px;
+    }
+
+    .admin-main {
+        margin-left: 60px;
+    }
+
+    .admin-logo .logo-text,
+    .admin-status,
+    .nav-label {
+        display: none;
+    }
+
+    .admin-nav a {
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .admin-subnav a {
+        padding-left: 12px;
+    }
+
+    .admin-topbar {
+        padding: 12px 16px;
+    }
+
+    .admin-content {
+        padding: 16px;
+    }
+}
+
+/* --- Mobile: < 768px --- */
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    .nav-toggle {
+        display: flex;
+        margin-left: auto;
+        order: 3;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: var(--color-card);
+        flex-direction: column;
+        padding: 24px;
+        gap: 16px;
+        box-shadow: var(--shadow-md);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+        z-index: 999;
+    }
+
+    .nav-toggle-checkbox:checked ~ .nav-links {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-toggle-checkbox:checked ~ .nav-toggle span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-toggle-checkbox:checked ~ .nav-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle-checkbox:checked ~ .nav-toggle span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .blog-layout {
+        grid-template-columns: 1fr;
+        padding: 20px 12px;
+    }
+
+    .blog-main {
+        order: 1;
+    }
+
+    .blog-sidebar {
+        order: 2;
+    }
+
+    .blog-card {
+        flex-direction: column;
+    }
+
+    .blog-card-thumb {
+        width: 100%;
+        height: 160px;
+    }
+
+    .blog-card-content {
+        padding: 16px;
+    }
+
+    .blog-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        min-width: 100%;
+    }
+
+    .page-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .blog-detail-title {
+        font-size: 1.4rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .admin-sidebar {
+        position: fixed;
+        width: 220px;
+        transform: translateX(-100%);
+        transition: var(--transition);
+    }
+
+    .admin-sidebar .logo-text,
+    .admin-sidebar .nav-label {
+        display: inline;
+    }
+
+    .admin-main {
+        margin-left: 0;
+    }
+
+    .admin-layout {
+        position: relative;
+    }
+
+    .admin-topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .admin-form-inline {
+        flex-direction: column;
+    }
+
+    .table-responsive {
+        font-size: 0.8rem;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 8px 10px;
+    }
+
+    .pagination {
+        gap: 4px;
+    }
+
+    .pagination-btn {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    .profile-row strong {
+        display: block;
+        width: auto;
+        margin-bottom: 4px;
+    }
+}
+
+/* --- Small Mobile: < 480px --- */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .navbar-inner {
+        gap: 12px;
+    }
+
+    .logo-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .logo-text {
+        font-size: 1.1rem;
+    }
+
+    .whatsapp-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .page-banner {
+        padding: 24px 0;
+    }
+
+    .blog-card {
+        padding: 12px;
+    }
+
+    .blog-card-thumb {
+        height: 160px;
+    }
+
+    .blog-detail {
+        padding: 16px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 16px;
+    }
+
+    .login-card {
+        padding: 24px;
+    }
+
+    .admin-content {
+        padding: 12px;
+    }
+
+    .card-header h2 {
+        font-size: 1rem;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

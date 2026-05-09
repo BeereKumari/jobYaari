@@ -1,0 +1,432 @@
+/* ========================================
+   JobYaari Rich Text Editor Styles
+   ======================================== */
+
+.rich-editor-wrapper {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.rich-editor-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 6px 8px;
+    background: linear-gradient(to bottom, #f8f9fa, #f0f1f3);
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.toolbar-group {
+    display: flex;
+    gap: 2px;
+    padding: 0 6px;
+    border-right: 1px solid #dee2e6;
+    align-items: center;
+}
+
+.toolbar-group:last-child {
+    border-right: none;
+}
+
+.rich-editor-toolbar button {
+    padding: 5px 7px;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 13px;
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+    color: #495057;
+    font-family: inherit;
+}
+
+.rich-editor-toolbar button:hover {
+    background: #e9ecef;
+    border-color: #ced4da;
+}
+
+.rich-editor-toolbar button:active {
+    background: #dee2e6;
+}
+
+.rich-editor-toolbar button.active {
+    background: #1a73e8;
+    color: #fff;
+    border-color: #1a73e8;
+}
+
+.rich-editor-toolbar button.active-align {
+    background: #1a73e8;
+    color: #fff;
+    border-color: #1a73e8;
+}
+
+.rich-editor-toolbar select {
+    padding: 4px 6px;
+    border: 1px solid #ced4da;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+    height: 30px;
+    color: #495057;
+    transition: all 0.15s;
+}
+
+.rich-editor-toolbar select:hover {
+    border-color: #1a73e8;
+}
+
+.rich-editor-toolbar select:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+.color-picker-wrapper {
+    position: relative;
+    display: inline-flex;
+}
+
+.color-picker-wrapper input[type="color"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+.color-picker-btn {
+    position: relative;
+}
+
+.color-picker-btn .color-indicator {
+    width: 16px;
+    height: 3px;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1px;
+}
+
+/* Editor Content Area */
+.rich-editor-content {
+    min-height: 400px;
+    max-height: 600px;
+    padding: 20px;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    background: #fff;
+    overflow-y: auto;
+    color: #1a1a2e;
+}
+
+.rich-editor-content:focus {
+    background: #fffef5;
+}
+
+.rich-editor-content:empty::before {
+    content: attr(data-placeholder);
+    color: #aaa;
+    pointer-events: none;
+    font-style: italic;
+}
+
+/* Content Typography */
+.rich-editor-content h1 { font-size: 2em; margin: 0.5em 0; font-weight: 700; }
+.rich-editor-content h2 { font-size: 1.6em; margin: 0.5em 0; font-weight: 600; color: #1a73e8; }
+.rich-editor-content h3 { font-size: 1.3em; margin: 0.4em 0; font-weight: 600; }
+.rich-editor-content h4 { font-size: 1.1em; margin: 0.4em 0; font-weight: 600; }
+
+.rich-editor-content p { margin: 0.5em 0; }
+
+.rich-editor-content strong { font-weight: 700; }
+.rich-editor-content em { font-style: italic; }
+
+/* Tables - Government Portal Style */
+.rich-editor-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+}
+
+.rich-editor-content table th {
+    background: #1a73e8;
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    border: 1px solid #1557b0;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+.rich-editor-content table td {
+    padding: 9px 14px;
+    border: 1px solid #dee2e6;
+    vertical-align: top;
+}
+
+.rich-editor-content table.table-striped tbody tr:nth-child(even) {
+    background: #f0f4f8;
+}
+
+.rich-editor-content table.table-striped tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+.rich-editor-content table.table-no-border th,
+.rich-editor-content table.table-no-border td {
+    border: none;
+}
+
+.rich-editor-content table tbody tr:hover {
+    background: #e8f0fe;
+    transition: background 0.2s;
+}
+
+/* Other Content Elements */
+.rich-editor-content blockquote {
+    border-left: 4px solid #1a73e8;
+    padding: 12px 20px;
+    margin: 16px 0;
+    background: #f8f9fa;
+    font-style: italic;
+    color: #555;
+    border-radius: 0 4px 4px 0;
+}
+
+.rich-editor-content hr {
+    border: none;
+    border-top: 2px solid #dee2e6;
+    margin: 20px 0;
+}
+
+.rich-editor-content ul,
+.rich-editor-content ol {
+    padding-left: 28px;
+    margin: 12px 0;
+}
+
+.rich-editor-content li {
+    margin: 4px 0;
+}
+
+.rich-editor-content a {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+.rich-editor-content a:hover {
+    color: #1557b0;
+}
+
+.rich-editor-content pre {
+    background: #f4f4f4;
+    padding: 12px 16px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 13px;
+    border: 1px solid #dee2e6;
+}
+
+.rich-editor-content code {
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #e53935;
+}
+
+.rich-editor-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.editor-modal {
+    background: #fff;
+    padding: 28px;
+    border-radius: 10px;
+    min-width: 340px;
+    max-width: 90vw;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+}
+
+.editor-modal h3 {
+    margin: 0 0 16px 0;
+    font-size: 18px;
+    color: #1a1a2e;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #1a73e8;
+}
+
+.editor-modal .modal-desc {
+    font-size: 13px;
+    color: #6c757d;
+    margin-bottom: 16px;
+}
+
+.editor-modal .modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.editor-modal .modal-form label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #495057;
+}
+
+.editor-modal .modal-form input[type="number"] {
+    width: 80px;
+    padding: 6px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.editor-modal .modal-form input[type="number"]:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+.editor-modal .modal-form input[type="checkbox"] {
+    accent-color: #1a73e8;
+    width: 16px;
+    height: 16px;
+}
+
+/* Template Grid */
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.template-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 16px 10px;
+    border: 2px solid #e8ecef;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 12px;
+    color: #495057;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.template-btn:hover {
+    border-color: #1a73e8;
+    background: #e8f0fe;
+    color: #1a73e8;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(26, 115, 232, 0.15);
+}
+
+.template-btn .template-icon {
+    font-size: 24px;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    justify-content: flex-end;
+}
+
+.btn-modal-insert,
+.btn-modal-cancel {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-modal-insert {
+    background: #1a73e8;
+    color: #fff;
+}
+
+.btn-modal-insert:hover {
+    background: #1557b0;
+}
+
+.btn-modal-cancel {
+    background: #e9ecef;
+    color: #495057;
+}
+
+.btn-modal-cancel:hover {
+    background: #dee2e6;
+}
+
+/* Responsive for modal */
+@media (max-width: 768px) {
+    .template-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .editor-modal {
+        min-width: 90vw;
+        padding: 20px;
+    }
+
+    .rich-editor-toolbar {
+        padding: 4px 6px;
+    }
+
+    .toolbar-group {
+        padding: 0 4px;
+    }
+}

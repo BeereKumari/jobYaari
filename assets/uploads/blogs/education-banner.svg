@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <!-- White paper background -->
+  <rect width="640" height="480" fill="#ffffff"/>
+  <!-- Outer border -->
+  <rect x="8" y="8" width="624" height="464" fill="none" stroke="#1a3a6b" stroke-width="3"/>
+  <rect x="14" y="14" width="612" height="452" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
+  
+  <!-- Government header -->
+  <circle cx="80" cy="55" r="28" fill="none" stroke="#1a3a6b" stroke-width="2"/>
+  <text x="80" y="55" text-anchor="middle" font-family="Arial" font-size="8" fill="#1a3a6b" font-weight="bold">INDIA</text>
+  <text x="80" y="65" text-anchor="middle" font-family="Arial" font-size="7" fill="#1a3a6b">GOVT</text>
+  <text x="320" y="40" text-anchor="middle" font-family="Arial" font-size="13" fill="#1a3a6b" font-weight="bold">MINISTRY OF EDUCATION</text>
+  <text x="320" y="56" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">शिक्षा मंत्रालय | Government of India</text>
+  <text x="320" y="70" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">Shastri Bhawan, New Delhi - 110001</text>
+  <line x1="40" y1="80" x2="600" y2="80" stroke="#1a3a6b" stroke-width="1"/>
+  
+  <!-- Circular header -->
+  <text x="60" y="105" font-family="Arial" font-size="11" fill="#555">F.No. 10-1/2026-NEP</text>
+  <text x="580" y="105" text-anchor="end" font-family="Arial" font-size="11" fill="#555">Dated: 05.03.2026</text>
+  
+  <!-- Circular Title Box -->
+  <rect x="60" y="115" width="520" height="40" rx="4" fill="#8b5cf6"/>
+  <text x="320" y="141" text-anchor="middle" font-family="Arial" font-size="16" fill="white" font-weight="bold">NATIONAL EDUCATION POLICY (NEP) 2026</text>
+  
+  <!-- Official Circular Content -->
+  <text x="60" y="180" font-family="Arial" font-size="13" fill="#1a3a6b" font-weight="bold">OFFICE MEMORANDUM</text>
+  <text x="60" y="200" font-family="Arial" font-size="11" fill="#555">Subject: Key Updates and Implementation Guidelines for NEP 2026 - regarding</text>
+  
+  <!-- Policy Points -->
+  <rect x="60" y="215" width="520" height="160" fill="#f5f3ff" stroke="#ddd" stroke-width="1" rx="4"/>
+  <text x="80" y="240" font-family="Arial" font-size="12" fill="#1a3a6b" font-weight="bold">Major Policy Updates:</text>
+  <text x="80" y="262" font-family="Arial" font-size="11" fill="#333">1. Multilingual education made mandatory up to Grade 5</text>
+  <text x="80" y="282" font-family="Arial" font-size="11" fill="#333">2. Flexible curriculum choices from Grade 6 onwards</text>
+  <text x="80" y="302" font-family="Arial" font-size="11" fill="#333">3. Multiple entry/exit options in undergraduate programs</text>
+  <text x="80" y="322" font-family="Arial" font-size="11" fill="#333">4. Vocational education integration from Class 6</text>
+  <text x="80" y="342" font-family="Arial" font-size="11" fill="#333">5. New assessment framework - 360 degree evaluation</text>
+  <text x="80" y="362" font-family="Arial" font-size="11" fill="#333">6. Academic Bank of Credits (ABC) implementation</text>
+  
+  <!-- Implementation Timeline -->
+  <text x="60" y="400" font-family="Arial" font-size="12" fill="#c41e3a" font-weight="bold">Implementation:</text>
+  <text x="180" y="400" font-family="Arial" font-size="12" fill="#333">Phased rollout from Academic Year 2026-27</text>
+  
+  <!-- Signature -->
+  <text x="450" y="440" font-family="Arial" font-size="10" fill="#555">(Name &amp; Designation)</text>
+  <text x="440" y="455" font-family="Arial" font-size="9" fill="#888">Joint Secretary, MoE</text>
+</svg>
